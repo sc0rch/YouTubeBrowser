@@ -23,4 +23,4 @@ Keep eye on [changes](CHANGELOG.md).
 
 # License
 
-TableKit is available under the MIT license. See LICENSE for details.
+YouTubeBrowser is available under the MIT license. See LICENSE for details.
