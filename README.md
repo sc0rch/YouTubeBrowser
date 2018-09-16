@@ -7,6 +7,7 @@
 </p>
 
 Very simple and lightweight YouTube browser.
+
 Application is under development, every feature is a possible subject to change.
 
 # Features
