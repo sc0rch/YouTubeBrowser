@@ -14,7 +14,7 @@ Very simple and lightweight YouTube browser. By the people for the people.
 
 # Requirements
 
-- macOS 10.10
+- macOS 10.12
 - Xcode 10.0
 
 # Changelog
