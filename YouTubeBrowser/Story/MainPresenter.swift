@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol MainViewProtocol: class {
-}
+protocol MainViewProtocol: class {}
 
 protocol WebViewProtocol: class {
   func navigateToUrl(url: URL)
@@ -43,9 +42,9 @@ class MainPresenter: MainPresenterProtocol {
   func mainControllerDidLoad() {
     mainRouter.navigateToHome()
   }
-  
+
   // MARK: Navigation
-  
+
   func navigateToHome() {
     mainRouter.navigateToHome()
   }

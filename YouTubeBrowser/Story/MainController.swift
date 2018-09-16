@@ -16,6 +16,9 @@ class MainController: NSViewController {
     mainPresenter = SwinjectAssembler.resolve(MainPresenterProtocol.self)
     mainPresenter.mainView = self
     mainPresenter.mainControllerDidLoad()
+
+    let appDelegate = NSApp.delegate as! AppDelegate
+    appDelegate.mainPresenter = mainPresenter
   }
 
   override func viewWillAppear() {
@@ -26,10 +29,6 @@ class MainController: NSViewController {
     didSet {
       // Update the view, if already loaded.
     }
-  }
-  
-  @IBAction func openHome(_ sender: AnyObject) {
-    mainPresenter.navigateToHome()
   }
 }
 
