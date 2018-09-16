@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+SRCROOT="$(dirname "$GIT_DIR")"
+
+/usr/local/bin/swiftformat "${SRCROOT}" \
+  --indent 2 \
+  --disable unusedArguments \
+  --commas inline \
+  --exclude "Pods,Carthage,Frameworks,Products"
+
+/usr/local/bin/swiftlint
