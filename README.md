@@ -10,9 +10,17 @@ Very simple and lightweight YouTube browser.
 
 Application is under development, every feature is a possible subject to change.
 
-# Features
+# Roadmap
 
 - [x] Always on Top support
+- [ ] Roadmap, App Preferences
+- [ ] Roadmap, Mini player support
+- [ ] Roadmap, Fullscreen player support
+- [ ] Roadmap, JavaScript injection support
+- [ ] Roadmap, Watch in window or menu bar popover
+- [ ] Roadmap, Watch video in tabs with auto stop / auto play support
+- [ ] Roadmap, Favorite channels to navigate
+- [ ] Roadmap, Recent videos
 
 Application is under development, every feature is a possible subject to change.
 

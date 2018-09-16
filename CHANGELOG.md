@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [0.2-alpha]
+### Added:
+- Inject css styles to autohide YouTube toolbar if window is too small.
+- Inject css styles to remove App Select button from toolbar.
+- Inject css styles to remove Upload button from toolbar.
+
 ## [0.1-alpha]
 ### Added:
 - Add WebView which automatically loads YouTube.

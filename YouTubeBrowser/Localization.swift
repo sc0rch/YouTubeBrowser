@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Nested localization groups
 enum Localization {
   enum Main {
     static let title = "YouTubeBrowser"
