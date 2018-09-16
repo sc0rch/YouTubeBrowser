@@ -1,2 +1,3 @@
 
 cleanupYouTubeToolbarStyles();
+installMiniPlayerStyles();

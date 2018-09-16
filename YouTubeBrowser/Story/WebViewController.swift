@@ -39,10 +39,13 @@ extension WebViewController: WKNavigationDelegate {
     let cleanUiJsUrl = Bundle.main.url(forResource: "CleanUiFunctions", withExtension: "js")!
     let cleanUiJs = try! String(contentsOf: cleanUiJsUrl)
 
+    let playerJsUrl = Bundle.main.url(forResource: "PlayerFunctions", withExtension: "js")!
+    let playerJs = try! String(contentsOf: playerJsUrl)
+
     let injectJsUrl = Bundle.main.url(forResource: "Inject", withExtension: "js")!
     let injectJs = try! String(contentsOf: injectJsUrl)
 
-    let js = [cleanUiJs, injectJs].joined(separator: "\n")
+    let js = [cleanUiJs, playerJs, injectJs].joined(separator: "\n")
 
     webView.evaluateJavaScript(js) { _, error in
       if let error = error {

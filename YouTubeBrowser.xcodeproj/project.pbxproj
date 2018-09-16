@@ -16,6 +16,7 @@
 		9CD81C8D214DE472001E7FB1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8C214DE472001E7FB1 /* MainRouter.swift */; };
 		9CD81C8F214DE531001E7FB1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */; };
 		9CE464F4214E2767005000DD /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE464F3214E2767005000DD /* EventMonitor.swift */; };
+		9CE464F6214E36B9005000DD /* PlayerFunctions.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CE464F5214E36B8005000DD /* PlayerFunctions.js */; };
 		9CE464F9214E43F1005000DD /* CleanUiFunctions.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CE464F8214E43F1005000DD /* CleanUiFunctions.js */; };
 		9CE464FB214E449E005000DD /* Inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CE464FA214E449E005000DD /* Inject.js */; };
 		9CF2EF30214DC2C2000D5E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		9CD81C8C214DE472001E7FB1 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		9CE464F3214E2767005000DD /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		9CE464F5214E36B8005000DD /* PlayerFunctions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = PlayerFunctions.js; sourceTree = "<group>"; };
 		9CE464F8214E43F1005000DD /* CleanUiFunctions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CleanUiFunctions.js; sourceTree = "<group>"; };
 		9CE464FA214E449E005000DD /* Inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Inject.js; sourceTree = "<group>"; };
 		9CF2EF2C214DC2C2000D5E30 /* YouTubeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9CE464F8214E43F1005000DD /* CleanUiFunctions.js */,
+				9CE464F5214E36B8005000DD /* PlayerFunctions.js */,
 				9CE464FA214E449E005000DD /* Inject.js */,
 			);
 			path = JavaScript;
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE464F6214E36B9005000DD /* PlayerFunctions.js in Resources */,
 				9CF2EF4E214DCC0B000D5E30 /* Cartfile in Resources */,
 				9CE464F9214E43F1005000DD /* CleanUiFunctions.js in Resources */,
 				9CF2EF42214DC33A000D5E30 /* LICENSE in Resources */,
