@@ -8,11 +8,21 @@
 
 import Foundation
 
-protocol MainViewProtocol: class {}
+// MARK: - MainViewProtocol
+
+protocol MainViewProtocol: class {
+  var mainPresenter: MainPresenterProtocol? { get set }
+}
+
+// MARK: - WebViewProtocol
 
 protocol WebViewProtocol: class {
+  var mainPresenter: MainPresenterProtocol? { get set }
+
   func navigateToUrl(url: URL)
 }
+
+// MARK: - MainPresenterProtocol
 
 protocol MainPresenterProtocol: class {
   var mainView: MainViewProtocol? { get set }
@@ -22,6 +32,9 @@ protocol MainPresenterProtocol: class {
   func navigateToHome()
 }
 
+// MARK: - MainPresenter
+
+/// Use MainPresenter to execute view-related logic.
 class MainPresenter: MainPresenterProtocol {
   // MARK: Dependencies
 

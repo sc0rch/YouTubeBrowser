@@ -8,6 +8,7 @@
 
 import Cocoa
 
+/// Very simple event monitor to listen global events aka mouse presses.
 class EventMonitor {
   private var monitor: Any?
   private let mask: NSEvent.EventTypeMask

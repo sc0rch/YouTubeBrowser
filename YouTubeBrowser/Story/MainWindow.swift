@@ -8,6 +8,7 @@
 
 import Cocoa
 
+/// Use MainWindow only to setup window appearance, nothing more.
 class MainWindow: NSWindowController {
   override func windowDidLoad() {
     super.windowDidLoad()

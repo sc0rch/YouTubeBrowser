@@ -11,9 +11,11 @@ import Foundation
 protocol MainRouterProtocol: class {
   var webView: WebViewProtocol? { get set }
 
+  /// Go to YouTube home page.
   func navigateToHome()
 }
 
+/// Router to navigate from main window to other windows or web pages.
 class MainRouter: MainRouterProtocol {
   // MARK: Dependencies
 
