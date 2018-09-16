@@ -13,6 +13,7 @@ Application is under development, every feature is a possible subject to change.
 # Roadmap
 
 - [x] Always on Top support
+- [ ] Roadmap, App Preferences
 - [ ] Roadmap, Mini player support
 - [ ] Roadmap, Fullscreen player support
 - [ ] Roadmap, JavaScript injection support
