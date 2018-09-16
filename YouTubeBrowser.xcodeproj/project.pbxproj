@@ -7,19 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CD81C7A214DE288001E7FB1 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD81C77214DE25A001E7FB1 /* Swinject.framework */; };
+		9CD81C7B214DE288001E7FB1 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD81C77214DE25A001E7FB1 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CD81C85214DE301001E7FB1 /* Swinject.framework.dSYM in Carthage, Copy dSYM files */ = {isa = PBXBuildFile; fileRef = 9CD81C84214DE2BE001E7FB1 /* Swinject.framework.dSYM */; };
+		9CD81C88214DE36A001E7FB1 /* SwinjectAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C87214DE36A001E7FB1 /* SwinjectAssembler.swift */; };
+		9CD81C8B214DE41A001E7FB1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8A214DE41A001E7FB1 /* MainAssembly.swift */; };
+		9CD81C8D214DE472001E7FB1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8C214DE472001E7FB1 /* MainRouter.swift */; };
+		9CD81C8F214DE531001E7FB1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */; };
 		9CF2EF30214DC2C2000D5E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */; };
-		9CF2EF32214DC2C2000D5E30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF31214DC2C2000D5E30 /* ViewController.swift */; };
+		9CF2EF32214DC2C2000D5E30 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF31214DC2C2000D5E30 /* MainController.swift */; };
 		9CF2EF34214DC2C3000D5E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF33214DC2C3000D5E30 /* Assets.xcassets */; };
 		9CF2EF37214DC2C3000D5E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF35214DC2C3000D5E30 /* Main.storyboard */; };
 		9CF2EF42214DC33A000D5E30 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF40214DC33A000D5E30 /* LICENSE */; };
 		9CF2EF43214DC33A000D5E30 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF41214DC33A000D5E30 /* README.md */; };
 		9CF2EF45214DC382000D5E30 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF44214DC382000D5E30 /* CHANGELOG.md */; };
+		9CF2EF48214DC8C6000D5E30 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF47214DC8C6000D5E30 /* WebViewController.swift */; };
+		9CF2EF4A214DCBD7000D5E30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF49214DCBD7000D5E30 /* Constants.swift */; };
+		9CF2EF4E214DCC0B000D5E30 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF4D214DCC0B000D5E30 /* Cartfile */; };
+		9CF2EF50214DD20D000D5E30 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF4F214DD20D000D5E30 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9CD81C7C214DE289001E7FB1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CD81C7B214DE288001E7FB1 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF2EF5C214DDDB0000D5E30 /* Carthage, Copy dSYM files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				9CD81C85214DE301001E7FB1 /* Swinject.framework.dSYM in Carthage, Copy dSYM files */,
+			);
+			name = "Carthage, Copy dSYM files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9CD81C77214DE25A001E7FB1 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
+		9CD81C84214DE2BE001E7FB1 /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/Mac/Swinject.framework.dSYM; sourceTree = "<group>"; };
+		9CD81C87214DE36A001E7FB1 /* SwinjectAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectAssembler.swift; sourceTree = "<group>"; };
+		9CD81C8A214DE41A001E7FB1 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		9CD81C8C214DE472001E7FB1 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		9CF2EF2C214DC2C2000D5E30 /* YouTubeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CF2EF31214DC2C2000D5E30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CF2EF31214DC2C2000D5E30 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		9CF2EF33214DC2C3000D5E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF2EF36214DC2C3000D5E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CF2EF38214DC2C3000D5E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +69,10 @@
 		9CF2EF40214DC33A000D5E30 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9CF2EF41214DC33A000D5E30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CF2EF44214DC382000D5E30 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9CF2EF47214DC8C6000D5E30 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		9CF2EF49214DCBD7000D5E30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CF2EF4D214DCC0B000D5E30 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		9CF2EF4F214DD20D000D5E30 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +80,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD81C7A214DE288001E7FB1 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CD81C89214DE3CA001E7FB1 /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				9CD81C87214DE36A001E7FB1 /* SwinjectAssembler.swift */,
+			);
+			path = Swinject;
+			sourceTree = "<group>";
+		};
 		9CF2EF23214DC2C2000D5E30 = {
 			isa = PBXGroup;
 			children = (
 				9CF2EF2E214DC2C2000D5E30 /* YouTubeBrowser */,
 				9CF2EF3F214DC315000D5E30 /* Supporting Files */,
+				9CF2EF5B214DDD27000D5E30 /* Frameworks */,
 				9CF2EF2D214DC2C2000D5E30 /* Products */,
+				9CF2EF4D214DCC0B000D5E30 /* Cartfile */,
 				9CF2EF40214DC33A000D5E30 /* LICENSE */,
 				9CF2EF41214DC33A000D5E30 /* README.md */,
 				9CF2EF44214DC382000D5E30 /* CHANGELOG.md */,
@@ -63,9 +120,11 @@
 		9CF2EF2E214DC2C2000D5E30 /* YouTubeBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				9CF2EF35214DC2C3000D5E30 /* Main.storyboard */,
-				9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */,
-				9CF2EF31214DC2C2000D5E30 /* ViewController.swift */,
+				9CF2EF49214DCBD7000D5E30 /* Constants.swift */,
+				9CF2EF4F214DD20D000D5E30 /* Localization.swift */,
+				9CD81C89214DE3CA001E7FB1 /* Swinject */,
+				9CF2EF4B214DCBDC000D5E30 /* Story */,
+				9CF2EF4C214DCBE8000D5E30 /* App */,
 			);
 			path = YouTubeBrowser;
 			sourceTree = "<group>";
@@ -80,6 +139,36 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9CF2EF4B214DCBDC000D5E30 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				9CD81C8A214DE41A001E7FB1 /* MainAssembly.swift */,
+				9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */,
+				9CD81C8C214DE472001E7FB1 /* MainRouter.swift */,
+				9CF2EF35214DC2C3000D5E30 /* Main.storyboard */,
+				9CF2EF31214DC2C2000D5E30 /* MainController.swift */,
+				9CF2EF47214DC8C6000D5E30 /* WebViewController.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		9CF2EF4C214DCBE8000D5E30 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9CF2EF5B214DDD27000D5E30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CD81C84214DE2BE001E7FB1 /* Swinject.framework.dSYM */,
+				9CD81C77214DE25A001E7FB1 /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,10 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF2EF3C214DC2C3000D5E30 /* Build configuration list for PBXNativeTarget "YouTubeBrowser" */;
 			buildPhases = (
-				9CF2EF46214DC589000D5E30 /* Format Code by SwiftFormat */,
 				9CF2EF28214DC2C2000D5E30 /* Sources */,
 				9CF2EF29214DC2C2000D5E30 /* Frameworks */,
 				9CF2EF2A214DC2C2000D5E30 /* Resources */,
+				9CD81C6B214DE05B001E7FB1 /* Carthage, Copy Frameworks */,
+				9CF2EF5C214DDDB0000D5E30 /* Carthage, Copy dSYM files */,
+				9CD81C7C214DE289001E7FB1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +204,11 @@
 				TargetAttributes = {
 					9CF2EF2B214DC2C2000D5E30 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF2EF4E214DCC0B000D5E30 /* Cartfile in Resources */,
 				9CF2EF42214DC33A000D5E30 /* LICENSE in Resources */,
 				9CF2EF45214DC382000D5E30 /* CHANGELOG.md in Resources */,
 				9CF2EF34214DC2C3000D5E30 /* Assets.xcassets in Resources */,
@@ -150,7 +247,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9CF2EF46214DC589000D5E30 /* Format Code by SwiftFormat */ = {
+		9CD81C6B214DE05B001E7FB1 /* Carthage, Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -158,15 +255,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Swinject.framework",
 			);
-			name = "Format Code by SwiftFormat";
+			name = "Carthage, Copy Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\nswiftformat . \\\n    --indent 2 \\\n    --commas inline \\\n    --disable unusedArguments \\\n    --exclude \"Pods,Carthage,Frameworks,Products\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -175,8 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF2EF32214DC2C2000D5E30 /* ViewController.swift in Sources */,
+				9CD81C88214DE36A001E7FB1 /* SwinjectAssembler.swift in Sources */,
+				9CD81C8D214DE472001E7FB1 /* MainRouter.swift in Sources */,
+				9CF2EF32214DC2C2000D5E30 /* MainController.swift in Sources */,
+				9CD81C8B214DE41A001E7FB1 /* MainAssembly.swift in Sources */,
+				9CD81C8F214DE531001E7FB1 /* MainPresenter.swift in Sources */,
+				9CF2EF50214DD20D000D5E30 /* Localization.swift in Sources */,
+				9CF2EF48214DC8C6000D5E30 /* WebViewController.swift in Sources */,
 				9CF2EF30214DC2C2000D5E30 /* AppDelegate.swift in Sources */,
+				9CF2EF4A214DCBD7000D5E30 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +336,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -292,6 +398,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -300,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -317,6 +424,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4N32Z87L9L;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4N32Z87L9L;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

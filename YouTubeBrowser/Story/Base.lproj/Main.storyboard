@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.13.2"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="14313.13.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +676,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="YouTubeBrowser" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -700,18 +703,66 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="XfG-lQ-9wD" customClass="MainController" customModule="YouTubeBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="LYB-Oo-Pb8">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <connections>
+                                    <segue destination="A7H-tD-ksH" kind="embed" id="sED-jr-THo"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LYB-Oo-Pb8" secondAttribute="bottom" id="Cfi-gV-9re"/>
+                            <constraint firstItem="LYB-Oo-Pb8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="KKa-Nu-Odk"/>
+                            <constraint firstAttribute="trailing" secondItem="LYB-Oo-Pb8" secondAttribute="trailing" id="VQp-je-nhH"/>
+                            <constraint firstItem="LYB-Oo-Pb8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ccq-I9-PHj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="QvV-Bt-quB">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="A7H-tD-ksH" customClass="WebViewController" customModule="YouTubeBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="RQa-Yo-ozI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" canDrawConcurrently="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STq-Vb-EEM">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                                <connections>
+                                    <outlet property="navigationDelegate" destination="A7H-tD-ksH" id="EYE-dX-5cL"/>
+                                </connections>
+                            </wkWebView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="STq-Vb-EEM" firstAttribute="leading" secondItem="RQa-Yo-ozI" secondAttribute="leading" id="G0f-XX-ig4"/>
+                            <constraint firstAttribute="trailing" secondItem="STq-Vb-EEM" secondAttribute="trailing" id="Z70-Jx-NJR"/>
+                            <constraint firstAttribute="bottom" secondItem="STq-Vb-EEM" secondAttribute="bottom" id="vT2-qa-AQK"/>
+                            <constraint firstItem="STq-Vb-EEM" firstAttribute="top" secondItem="RQa-Yo-ozI" secondAttribute="top" id="yfV-s1-SdY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="STq-Vb-EEM" id="H1U-WF-51x"/>
+                    </connections>
+                </viewController>
+                <customObject id="Uxx-WB-OYD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1072"/>
         </scene>
     </scenes>
 </document>
