@@ -25,7 +25,13 @@ function cleanupYouTubeToolbarStyles() {
 function cleanupYouTubeToolbar() {
   // add class to autohide toolbar when width is too low
   var youtubeToolbar = document.querySelector(youtubeToolbarSelector);
-  youtubeToolbar.classList.add(styleYtbAutohideToolbar);
+  if (youtubeToolbar != null) {
+    if (youtubeToolbar.classList != null) {
+      youtubeToolbar.classList.add(styleYtbAutohideToolbar);
+    } else {
+      youtubeToolbar.class = styleYtbAutohideToolbar;
+    }
+  }
   
   // hide logo
   var logo = document.querySelector(youtubeToolbarLogoSelector);
