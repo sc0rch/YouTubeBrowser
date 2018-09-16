@@ -6,11 +6,14 @@
 <a href="https://raw.githubusercontent.com/maxsokolov/tablekit/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 </p>
 
-Very simple and lightweight YouTube browser. By the people for the people.
+Very simple and lightweight YouTube browser.
+Application is under development, every feature is a possible subject to change.
 
 # Features
 
-- [x] Work in progress ...
+- [x] Always on Top support
+
+Application is under development, every feature is a possible subject to change.
 
 # Requirements
 
