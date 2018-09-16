@@ -20,6 +20,7 @@ class MainController: NSViewController {
 
   override func viewWillAppear() {
     super.viewWillAppear()
+    
     view.window?.title = Localization.Main.title
     view.window?.minSize = NSSize(width: 320.0, height: 240.0)
     view.window?.setContentSize(NSSize(width: 800.0, height: 550.0))

@@ -10,7 +10,14 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+  var mainWindow: MainWindow? = nil
+  
   func applicationDidFinishLaunching(_: Notification) {}
+  
+  func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+    mainWindow?.window?.makeKeyAndOrderFront(self)
+    return false
+  }
 
   func applicationWillTerminate(_: Notification) {}
 }

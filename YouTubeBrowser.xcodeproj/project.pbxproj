@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CD5586F214E02B600118B42 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5586E214E02B600118B42 /* MainWindow.swift */; };
 		9CD81C7A214DE288001E7FB1 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD81C77214DE25A001E7FB1 /* Swinject.framework */; };
 		9CD81C7B214DE288001E7FB1 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD81C77214DE25A001E7FB1 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CD81C85214DE301001E7FB1 /* Swinject.framework.dSYM in Carthage, Copy dSYM files */ = {isa = PBXBuildFile; fileRef = 9CD81C84214DE2BE001E7FB1 /* Swinject.framework.dSYM */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9CD5586E214E02B600118B42 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		9CD81C77214DE25A001E7FB1 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
 		9CD81C84214DE2BE001E7FB1 /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/Mac/Swinject.framework.dSYM; sourceTree = "<group>"; };
 		9CD81C87214DE36A001E7FB1 /* SwinjectAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectAssembler.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */,
 				9CD81C8C214DE472001E7FB1 /* MainRouter.swift */,
 				9CF2EF35214DC2C3000D5E30 /* Main.storyboard */,
+				9CD5586E214E02B600118B42 /* MainWindow.swift */,
 				9CF2EF31214DC2C2000D5E30 /* MainController.swift */,
 				9CF2EF47214DC8C6000D5E30 /* WebViewController.swift */,
 			);
@@ -275,6 +278,7 @@
 			files = (
 				9CD81C88214DE36A001E7FB1 /* SwinjectAssembler.swift in Sources */,
 				9CD81C8D214DE472001E7FB1 /* MainRouter.swift in Sources */,
+				9CD5586F214E02B600118B42 /* MainWindow.swift in Sources */,
 				9CF2EF32214DC2C2000D5E30 /* MainController.swift in Sources */,
 				9CD81C8B214DE41A001E7FB1 /* MainAssembly.swift in Sources */,
 				9CD81C8F214DE531001E7FB1 /* MainPresenter.swift in Sources */,

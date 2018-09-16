@@ -36,8 +36,6 @@ class MainPresenter: MainPresenterProtocol {
 
   init(mainRouter: MainRouterProtocol) {
     self.mainRouter = mainRouter
-
-    print("MainPresenter init")
   }
 
   func mainControllerDidLoad() {
