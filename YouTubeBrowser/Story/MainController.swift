@@ -27,6 +27,10 @@ class MainController: NSViewController {
       // Update the view, if already loaded.
     }
   }
+  
+  @IBAction func openHome(_ sender: AnyObject) {
+    mainPresenter.navigateToHome()
+  }
 }
 
 extension MainController: MainViewProtocol {}
