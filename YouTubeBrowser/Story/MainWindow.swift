@@ -16,7 +16,7 @@ class MainWindow: NSWindowController {
     appDelegate.mainWindow = self
 
     window?.title = Localization.Main.title
-    window?.minSize = NSSize(width: 320.0, height: 240.0)
+    window?.minSize = NSSize(width: 320.0, height: 210.0)
     window?.setContentSize(NSSize(width: 800.0, height: 550.0))
   }
 }

@@ -1,3 +1,2 @@
 
 cleanupYouTubeToolbarStyles();
-cleanupYouTubeToolbar();
