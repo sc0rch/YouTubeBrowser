@@ -18,6 +18,7 @@ class MainController: NSViewController {
     mainPresenter.mainControllerDidLoad()
 
     let appDelegate = NSApp.delegate as! AppDelegate
+    appDelegate.mainController = self
     appDelegate.mainPresenter = mainPresenter
   }
 

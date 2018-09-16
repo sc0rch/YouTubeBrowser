@@ -31,7 +31,29 @@ class WebViewController: NSViewController {
 }
 
 extension WebViewController: WKNavigationDelegate {
-  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {}
+  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    injectJavascript()
+  }
+
+  private func injectJavascript() {
+    let cleanUiJsUrl = Bundle.main.url(forResource: "CleanUiFunctions", withExtension: "js")!
+    let cleanUiJs = try! String(contentsOf: cleanUiJsUrl)
+
+    let injectJsUrl = Bundle.main.url(forResource: "Inject", withExtension: "js")!
+    let injectJs = try! String(contentsOf: injectJsUrl)
+
+    let js = [cleanUiJs, injectJs].joined(separator: "\n")
+
+    webView.evaluateJavaScript(js) { _, error in
+      if let error = error {
+        // TODO: Show execution error!
+        print(error)
+      } else {
+        // TODO: Show execution error!
+        print("Javascript called!")
+      }
+    }
+  }
 }
 
 extension WebViewController: WebViewProtocol {

@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // MARK: Dependencies
 
   var mainWindow: MainWindow?
+  var mainController: MainController?
   var mainPresenter: MainPresenterProtocol?
 
   // MARK: @IBOutlets

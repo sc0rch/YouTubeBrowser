@@ -15,6 +15,8 @@
 		9CD81C8B214DE41A001E7FB1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8A214DE41A001E7FB1 /* MainAssembly.swift */; };
 		9CD81C8D214DE472001E7FB1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8C214DE472001E7FB1 /* MainRouter.swift */; };
 		9CD81C8F214DE531001E7FB1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */; };
+		9CE464F9214E43F1005000DD /* CleanUiFunctions.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CE464F8214E43F1005000DD /* CleanUiFunctions.js */; };
+		9CE464FB214E449E005000DD /* Inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CE464FA214E449E005000DD /* Inject.js */; };
 		9CF2EF30214DC2C2000D5E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */; };
 		9CF2EF32214DC2C2000D5E30 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2EF31214DC2C2000D5E30 /* MainController.swift */; };
 		9CF2EF34214DC2C3000D5E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2EF33214DC2C3000D5E30 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		9CD81C8A214DE41A001E7FB1 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		9CD81C8C214DE472001E7FB1 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		9CD81C8E214DE531001E7FB1 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		9CE464F8214E43F1005000DD /* CleanUiFunctions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CleanUiFunctions.js; sourceTree = "<group>"; };
+		9CE464FA214E449E005000DD /* Inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Inject.js; sourceTree = "<group>"; };
 		9CF2EF2C214DC2C2000D5E30 /* YouTubeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF2EF2F214DC2C2000D5E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF2EF31214DC2C2000D5E30 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 			path = Swinject;
 			sourceTree = "<group>";
 		};
+		9CE464F7214E4351005000DD /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				9CE464F8214E43F1005000DD /* CleanUiFunctions.js */,
+				9CE464FA214E449E005000DD /* Inject.js */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
 		9CF2EF23214DC2C2000D5E30 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 				9CF2EF49214DCBD7000D5E30 /* Constants.swift */,
 				9CF2EF4F214DD20D000D5E30 /* Localization.swift */,
 				9CD81C89214DE3CA001E7FB1 /* Swinject */,
+				9CE464F7214E4351005000DD /* JavaScript */,
 				9CF2EF4B214DCBDC000D5E30 /* Story */,
 				9CF2EF4C214DCBE8000D5E30 /* App */,
 			);
@@ -239,9 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF2EF4E214DCC0B000D5E30 /* Cartfile in Resources */,
+				9CE464F9214E43F1005000DD /* CleanUiFunctions.js in Resources */,
 				9CF2EF42214DC33A000D5E30 /* LICENSE in Resources */,
 				9CF2EF45214DC382000D5E30 /* CHANGELOG.md in Resources */,
 				9CF2EF34214DC2C3000D5E30 /* Assets.xcassets in Resources */,
+				9CE464FB214E449E005000DD /* Inject.js in Resources */,
 				9CF2EF43214DC33A000D5E30 /* README.md in Resources */,
 				9CF2EF37214DC2C3000D5E30 /* Main.storyboard in Resources */,
 			);
